@@ -1,0 +1,103 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--hola yo dani, estuve probando cosas pero aun me falta, mas que nada mando para ver si voy encaminada--*/
+header{
+    height: 1400px;
+    padding: 200px;   
+}
+#cabecera {
+    width: 1100px;
+    height: 5px;
+    background-image: url(img/imgn-7..jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+nav img{
+    margin: 20px 0px 0px 48px
+}
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin: 25px 0px 250px 50px;
+}
+nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.botonera {
+    width: 1400px;
+    height: 100px;
+    background-color: rgb(221, 188, 252);
+    padding-top: 10px;
+}
+main h3{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0px 0px 48px;
+}
+main h4{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px 0px 48px;
+}
+div p em{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 155px;
+    padding: 80px;
+}
+main p {
+    margin: 50px 0px 0px 50px;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+h3{
+    margin: 100px 0px 0px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.fecha{
+    font-size: 15px;
+    margin: 10px 0px 0px 50px;
+}
+ul{
+    margin: 50px;
+    list-style: square;
+}
+ol{
+    margin: 50px 0px 0px 50px;
+    font-size: 10px;
+    list-style-type: none;
+}
+li{
+    margin: 50px 0px 0px 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+aside{
+    color: rgb(113, 31, 190);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: rgb(218, 224, 253);
+    height: 400px;
+    padding: 1px;
+}
+aside h5{
+    font-size: 18px;
+    margin: 50px 0px 0px 50px;
+
+}
+.cajafoot{
+    padding: 15px 15px;
+    width: 1400px;
+    height: 500px;
+    background-color: rgb(221,188,252);
+}
+.cajafoot li{
+    font-size: 15px;
+    margin: 50px 0px 0px 50px;
+}

@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>Ejercicio 1 Gomez D</title>
 <link href="estilos.css"= rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -11,47 +12,43 @@
         </header>
         <nav class="botonera">
             <img src="img/imgn-8.png" width="90px" height="50px" alt="logo"/>
-            <span>Sobre mí</span>
-            <span>Trabajos</span>
-            <span>Contacto</span>
+            <a href="#seccion-trabajos"><span>Trabajos</span></a>
+            <a href="#seccion-sobremi"><span>Sobre mí</span></a>
+            <a href="#seccion-contacto"><span>Contacto</span></a>
+
         </nav>
         <main>
             <h1 class="titulo">soy Daniela Gomez</h1>
             <section>
                 <article>
-                    <h3>Trabajos</h3>
+                    <h3 id="seccion-trabajos"> Trabajos</h3>
                         <img src="img/imgn-2.jpg" width="417px" height="278px" alt= "Libro Alien"/>
                         <spam> 
                             <img src="img/imgn-10.jpg" width="455px" height="300px" alt="tarjetas"/> 
                         </spam>
                     <div>
-                        <p><em>Diseñar es dar forma a ideas, transformándolas en realidades funcionales y estéticas.</em></p>
+                        <p>Diseñar es dar forma a ideas, transformándolas en realidades funcionales y estéticas.</em></p>
                     </div>
                         <img src="img/imgn-3.jpg" width="380px" height="295px" alt="Libro Stephen King"/>
                         <img src="img/imgn-4.jpg" width="322px" height="452px" alt="Poster de Terror"/>
-                        <h4>Experiencia</h4>
-                        <p>Freelance</p>
-                        <p class="fecha">2022 - Actualmente</p>
                         <ol>
                             <li>Diseño personalizado y creativo de tarjetas de cumpleaños para clientes individuales.</li>
                             <li>Creación de artículos decorativos y elementos para fiestas y celebraciones temáticas.</li>
                             <li>Preparación de archivos para impresión, asegurando la calidad y el cumplimiento de los requisitos técnicos</li>
                         </ol>
-
-                    <h4>Habilidades</h4>
-                        <span>Responsable</span>
-                        <span>Resolutiva</span>
-                        <span>Trabajo en equipo</span>
-                        <img src="img/imgn-5.jpg" width="500px" height="133px" alt="estadística 1"/>
+                    <div class="habilidades">
+                        <h4>Habilidades</h4>
+                            <span>Responsable</span>
+                            <span>Resolutiva</span>
+                            <span>Trabajo en equipo</span>
+                        
+                            <span>Proactiva</span>
+                            <span>Puntualidad</span>
+                    </div>
                     
-                        <span>Proactiva</span>
-                        <span>Puntualidad</span>
-                        <img src="img/imgn-6.jpg" width="500px" height="133px" alt="estadística 2"/>
-                    
-                    
-                    <h3>Sobre mí</h3>
-                    <img src="img/imgn-9jpg.jpg" width="440px" height="440" alt="yo"/>
-                         <p>Soy estudiante de Diseño y Comunicación visual en la Universidad Nacional de Lanús. Estoy en busca de una oportunidad laboral en la que pueda poner en práctica mis conocimientos. Soy comprometida, empática, puntual y muy dispuesta en aprender cosas</p>
+                    <h3 id="seccion-sobremi">Sobre mí</h3>
+                    <img src="img/imgn-9jpg.jpg" width="440px" height="440" alt="Daniela"/>
+                         <p class="descripcionmia">Soy estudiante de Diseño y Comunicación visual en la Universidad Nacional de Lanús. Estoy en busca de una oportunidad laboral en la que pueda poner en práctica mis conocimientos. Soy comprometida, empática, puntual y muy dispuesta en aprender cosas</p>
 
                     <h4>Herramientas</h4>
                     <ul>
@@ -88,9 +85,9 @@
             </section>
         </main>
         
-        <footer class="cajafoot">
+        <footer>
             <div>
-                <h3>Contacto</h3>
+                <h3 id="seccion-contacto">Contacto</h3>
                 <ul>
                     <li>DG.daniela.500@gmail.com</li>
                     <li>1168323625</li>

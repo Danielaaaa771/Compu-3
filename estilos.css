@@ -1,103 +1,176 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=League+Gothic&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/*--hola yo dani, estuve probando cosas pero aun me falta, mas que nada mando para ver si voy encaminada--*/
 header{
     height: 1400px;
     padding: 200px;   
-}
+} /*--ta--*/
+
+body{
+    background-color: rgb(242, 232, 252);
+    max-width: 1200px;
+} /*--ta--*/
+
+main{
+    margin: 50px 0px 0px 150px;
+} /*--ta--*/
+
 #cabecera {
-    width: 1100px;
-    height: 5px;
+    width: 90%;
+    height: 100px;
     background-image: url(img/imgn-7..jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-color: rgb(65, 18, 109);
+    background-attachment:fixed;
+}
+
+.titulo{
+    font-family: Bree;
+    font-size: 60px;
+    font-style: oblique;
+}
+
+nav span{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px 20px;
+    border: 1px solid violet;
+    font-family: "Reddit Sans", sans-serif ;
+}
+
+span:hover{
+    background-color: white;
+    color: rgb(62, 154, 240);
+}
+span:active{
+    color: violet;
+    background-color: rgb(108, 155, 255);
 }
 nav img{
-    margin: 20px 0px 0px 48px
-}
-.titulo{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
-    margin: 25px 0px 250px 50px;
-}
-nav{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    margin-top:20px;
 }
 .botonera {
     width: 1400px;
     height: 100px;
     background-color: rgb(221, 188, 252);
-    padding-top: 10px;
+    padding: 20px;
 }
-main h3{
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 10px 0px 0px 48px;
-}
-main h4{
-    font-size: 19px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px 0px 0px 48px;
-}
-div p em{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 155px;
-    padding: 80px;
-}
-main p {
-    margin: 50px 0px 0px 50px;
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-}
-h3{
-    margin: 100px 0px 0px 0px;
-    font-family: 'Times New Roman', Times, serif;
+
+.descripcionmia{
+    font-family: "Reddit Sans" sans-serif;
     font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
+h3{
+    font-size: 30px;
+    font-family: Bree;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 19px;
+    font-family: Bree;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+img{
+    margin: 20px 50px 20px 0px;
+}
+div p{
+    font-size: 30px;
+    font-family: "Bree";
+    font-style: italic;
+    margin: 80px;
+}
+ul li {
+    list-style: square;
+    font-family: "Reddit Sans";
+    padding:  5px 0px 5px 0px;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Reddit Sans";
+    padding: 5px 0px 5px 0px;
+}
+
 .fecha{
     font-size: 15px;
-    margin: 10px 0px 0px 50px;
+    /*margin: 10px 0px 0px 50px;*/
 }
-ul{
-    margin: 50px;
-    list-style: square;
-}
-ol{
-    margin: 50px 0px 0px 50px;
-    font-size: 10px;
-    list-style-type: none;
-}
-li{
-    margin: 50px 0px 0px 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ol li { 
+    font-family:"Reddit Sans";
     font-size: 18px;
+    padding: 5px 0px 5px 0px;
+    list-style: none;
 }
+
+.habilidades span{
+    border: 3px dashed rgb(248, 177, 248);
+    margin-left: 50px;
+    font-family: "Bree";
+    font-style: oblique;
+    font-size: 25px;
+    padding:5px;
+}
+.habilidades span:hover{
+    background-color: violet;
+    color: black;
+}
+
 aside{
     color: rgb(113, 31, 190);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
+    margin-left: 600px;
+    font-family: "Reddit Sans";
     background-color: rgb(218, 224, 253);
-    height: 400px;
-    padding: 1px;
+    padding: 10px;
 }
 aside h5{
-    font-size: 18px;
-    margin: 50px 0px 0px 50px;
+    font-size: 16px;
+    font-style: italic;
+}
+aside li{
+    list-style-type: none;
+    font-size: 14px;
+}
+aside p{
+    font-size: 14px;
+}
 
+/*--ta--*/
+footer{
+    background-color: rgb(87, 20, 150);
+    color:rgb(218, 208, 208);
+    padding: 10px;
 }
-.cajafoot{
-    padding: 15px 15px;
-    width: 1400px;
-    height: 500px;
-    background-color: rgb(221,188,252);
+footer li{
+    margin-left:150px;
+    list-style-type:none;
+    padding-bottom:5px;
 }
-.cajafoot li{
-    font-size: 15px;
-    margin: 50px 0px 0px 50px;
+
+li a{
+    display: inline;
+    color: aliceblue;
+    font-style: oblique;
+    text-decoration: none;
+}
+footer h3{
+    margin: 10px 0px 10px 150px
+}
+footer div ul li{
+    display: inline;
 }

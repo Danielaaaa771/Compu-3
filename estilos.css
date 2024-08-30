@@ -14,7 +14,7 @@ header{
 
 body{
     background-color: rgb(242, 232, 252);
-    max-width: 1200px;
+    max-width: 1200px; /*fijate que este estilo te esta agrandando mas de 100px y se pasa*/
 } /*--ta--*/
 
 main{
@@ -22,7 +22,7 @@ main{
 } /*--ta--*/
 
 #cabecera {
-    width: 90%;
+    width: 90%; /*y aca queda mas chico*/
     height: 100px;
     background-image: url(img/imgn-7..jpg);
     background-repeat: no-repeat;

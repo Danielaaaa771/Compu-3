@@ -8,23 +8,26 @@
 }
 
 header{
-    height: 1400px;
-    padding: 200px;   
-} /*--ta--*/
+    height: 1315px;
+    width: 200px;  
+}
 
 body{
     background-color: rgb(242, 232, 252);
-    max-width: 1200px;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
 } /*--ta--*/
 
-main{
-    margin: 50px 0px 0px 150px;
-} /*--ta--*/
 
 #cabecera {
-    width: 90%;
-    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
     background-image: url(img/imgn-7..jpg);
+    width: 1350px;
+    height: 300px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-color: rgb(65, 18, 109);
@@ -32,16 +35,24 @@ main{
 }
 
 .titulo{
+
     font-family: Bree;
     font-size: 60px;
     font-style: oblique;
+    text-align:left;
 }
-
+nav {
+    align-items: center;
+}
+img span{
+    justify-content: center;
+}
 nav span{
     text-decoration: none;
     font-size: 18px;
-    padding: 30px 20px;
-    border: 1px solid violet;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 146, 238);
     font-family: "Reddit Sans", sans-serif ;
 }
 
@@ -53,14 +64,15 @@ span:active{
     color: violet;
     background-color: rgb(108, 155, 255);
 }
-nav img{
-    margin-top:20px;
-}
 .botonera {
-    width: 1400px;
+    width: 1315px;
     height: 100px;
     background-color: rgb(221, 188, 252);
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 .descripcionmia{
@@ -69,6 +81,7 @@ nav img{
     font-style: italic;
     margin-top: 20px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 h3{
@@ -91,14 +104,9 @@ div p{
     font-size: 30px;
     font-family: "Bree";
     font-style: italic;
-    margin: 80px;
+    margin: 30px;
 }
-ul li {
-    list-style: square;
-    font-family: "Reddit Sans";
-    padding:  5px 0px 5px 0px;
-    font-size: 18px;
-}
+
 
 p {
     font-size: 18px;
@@ -106,37 +114,42 @@ p {
     padding: 5px 0px 5px 0px;
 }
 
-.fecha{
-    font-size: 15px;
-    /*margin: 10px 0px 0px 50px;*/
-}
 
-ol li { 
+li { 
     font-family:"Reddit Sans";
     font-size: 18px;
-    padding: 5px 0px 5px 0px;
     list-style: none;
 }
+div li p{
+    font-family:"Reddit Sans";
+    font-size: 18px;
+
+}
+
 
 .habilidades span{
     border: 3px dashed rgb(248, 177, 248);
-    margin-left: 50px;
     font-family: "Bree";
     font-style: oblique;
     font-size: 25px;
     padding:5px;
+    flex-wrap: wrap-reverse;
+    gap: 20px 40px;
 }
 .habilidades span:hover{
     background-color: violet;
     color: black;
 }
-
+.caracteristicas{
+    display: flex;
+    flex-direction:row;
+}
 aside{
     color: rgb(113, 31, 190);
-    margin-left: 600px;
     font-family: "Reddit Sans";
     background-color: rgb(218, 224, 253);
     padding: 10px;
+    flex-direction: column-reverse;
 }
 aside h5{
     font-size: 16px;
@@ -154,23 +167,25 @@ aside p{
 footer{
     background-color: rgb(87, 20, 150);
     color:rgb(218, 208, 208);
-    padding: 10px;
+    width: 1350px;
+    display: flex;
+    flex-direction: row;
+
+}
+footer h3{
+    margin-left: 50px;
 }
 footer li{
     margin-left:150px;
     list-style-type:none;
     padding-bottom:5px;
+    align-self: flex-end;
 }
 
 li a{
+
     display: inline;
     color: aliceblue;
-    font-style: oblique;
+    font-style: bold ;
     text-decoration: none;
-}
-footer h3{
-    margin: 10px 0px 10px 150px
-}
-footer div ul li{
-    display: inline;
 }

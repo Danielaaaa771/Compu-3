@@ -1,2 +1,3 @@
 # Compu-3
-Holis, de momento me esta costando dejar la imagen de logo del header al lado del nav bien alineado, cuando toco algo, el nav baja, si alinea el nav la imagen sube. Como deberia de proceder?
+Hola, mi tamaño de pantalla es de 1366x768
+Tengo que mejorar el margen y las herramientas que me anda costando. Creo que algo mal hago con el gap y no se qué

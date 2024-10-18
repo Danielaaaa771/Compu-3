@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Daniela_Gomez_CV</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="img/favicon-01.png" alt="favicon.ico">
+        <link href="estilos.css"= rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header id=cabecera>
+            <nav>
+                <a href="index.html"><img src="img/logo-b.svg" width="90px" height="50px" alt="logomio" id="logo"/></a>
+                <div id="botonesa"><a href="#seccion-trabajos">
+                    <a href="Proyectos.html"><span>Proyectos</span></a>
+                    <span>Arte</span>
+                    <a href="Contacto.html"><span>Contacto</span></a>
+                    <img src="img/Sol.svg" id="icon">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article id="obras">
+                    <div>
+                        <img src="img/1obra_ojo.jpg">
+                        <div class="descripcion">
+                            <p id="tituloobra">Ojo</p>
+                            <p>Computación 1</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/2obra_hipogrifo_.jpg">
+                        <div class="descripcion">
+                            <p id="tituloobra">Hipogrifo</p>
+                            <p>Computación 1</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/3obra_gato_.jpg">
+                        <p id="tituloobra">Gato en la Noche</p>
+                        <p>Medios Expresivos 3</p>
+                    </div>
+                    <div>
+                        <img src="img/4obra_gigante_.jpg">
+                        <p id="tituloobra">El Gigante</p>
+                        <p>Medios Expresivos 2</p>
+                    </div>
+                    <div>
+                        <img src="img/5obra_chica_.jpg">
+                        <p id="tituloobra">Un Jueves por la Tarde</p>
+                        <p>Medios Expresivos 2</p>
+                    </div>
+                    <div>
+                        <img src="img/6obra_bicho_.jpg">
+                        <p id="tituloobra">El Cuco</p>
+                        <p>Medios Expresivos 3</p>
+                    </div>
+                    <div>
+                        <img src="img/7obra_bodegon_.jpg">
+                        <p id="tituloobra">Martes</p>
+                        <p>Medios Expresivos 1</p>
+                    </div>
+                    <div>
+                        <img src="img/8obra_bodegonazul_.jpg">
+                        <p id="tituloobra">Una Tarde Lluviosa</p>
+                        <p>Medios Expresivos 1</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <ol>
+                <li>Todos los derechos reservados.</li>
+                <li id="bold">Copyright © 2024 Daniela Gomez.</li>
+            </ol>
+                <div class="footer-icons">
+                    <a href="mailto:dg.daniela.500@gmail.com" class="icon">
+                    <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_dani._.77/" target="_blank" class="icon">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.behance.net/danielagomez84" target="_blank" class="icon">
+                    <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            <a><img class="imagen" src="img/logo-b.svg" width="90" height="50" alt="logomio"/></a>
+        </footer>
+        <script>
+            var icon = document.getElementById("icon");
+            var logo = document.getElementById("logo")
+        
+            icon.onclick = function(){
+                document.body.classList.toggle("light-theme");
+                if(document.body.classList.contains("light-theme")){
+                    icon.src = "img/Luna.svg";
+                    logo.src = "img/logo-n.svg";
+                }else{
+                    icon.src="img/Sol.svg";
+                    logo.src = "img/logo-b.svg";
+                }
+        }
+        
+        </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    </body>
+</html> 

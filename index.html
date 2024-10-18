@@ -3,93 +3,84 @@
     <head>
         <meta charset="utf-8"/>
         <title>Daniela_Gomez_CV</title>
-        <link rel="icon" href="img/favicon-01.png" alt="favicon.ico">
+        <link rel="logo" href="img/favicon-01.png" alt="favicon.ico">
         <link href="estilos.css"= rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header id=cabecera>
-            <nav class="botonera">
-                <img id="milogo" src="img/LogoB.png" width="90px" height="50px" alt="logomio"/>
-                <a href="#seccion-trabajos"><span>Trabajos</span></a>
-                <a href="#seccion-sobremi"><span>Sobre mí</span></a>
-                <a href="#seccion-contacto"><span>Contacto</span></a>
+            <nav>
+                <img src="img/logo-b.svg" width="90px" height="50px" alt="logomio" id="logo"/>
+                <div id="botonesa"><a href="#seccion-trabajos">
+                    <a href="Proyectos.html"><span>Proyectos</span></a>
+                    <a href="Arte.html""><span>Arte</span></a>
+                    <a href="Contacto.html"><span>Contacto</span></a>
+                    <img src="img/Sol.svg" id="icon">
+                </div>
             </nav>
+            <video src="img/videobienvenida.mp4" muted autoplay loop></video>
+                <div id="frase">
+                    <p >Diseñar es dar forma a ideas,</p>
+                    <p>transformándolas en realidades funcionales y estéticas.</p>
+                </div>
         </header>
         <main>
-<!--trabajos-->
-            <section>
-                <article>
-                    <div>
-                        <h1>soy Daniela Gomez</h1>
-                    </div>
-                    <h3 id="seccion-trabajos"> Trabajos</h3>
-                    <div class="imagenes">
-                        <img class="imagen" src="img/libroalien.jpg" width="417px" height="278px" alt= "Libro Alien"/> 
-                        <img class="imagen" src="img/tarjetapresentacion.jpg" width="455px" height="300px" alt="tarjetas"/> 
-                    </div>
-                    <div id="frase">
-                        <p>Diseñar es dar forma a ideas, transformándolas en realidades funcionales y estéticas.
-                        </p>
-                    </div>
-                    <div class="imagenes">
-                        <img class="imagen" src="img/librosking.jpg" width="380px" height="295px" alt="Libro Stephen King"/>
-                        <img class="imagen" src="img/afichefantasma.jpg" width="322px" height="452px" alt="Poster de Terror"/>
-                    </div>
-                    <div>
-            </section>
 <!--botones de trabajos-->
-            <section>
-                <p class="subtitulo">Algunos trabajos</p> 
+            <section id="trabajos">
+                <h2>Algunos trabajos</h2> 
                 <div class="mistrabajos">
-                    <p class="boton">Afiche</p>
+                    <a href="Proyectos.html"><p class="boton">Afiche</p></a>
                     <img src="img/coral.gif" width="80px" height="80px" alt="Coral"/>
                     <p>Social</p>
                 </div>
                 <div class="mistrabajos">
-                    <p class="boton">Afiche</p>
+                    <a href="Proyectos.html"><p class="boton">Afiche</p></a>
                     <img src="img/fantasma.gif" width="80px" height="80px" alt="Fantasma"/>
                     <p>Cultural</p>
                 </div>
                 <div class="mistrabajos">
-                    <p class="boton">Infografía</p>
+                    <a href="Proyectos.html"><p class="boton">Infografía</p></a>
                     <img src="img/corazon.gif" width="80px" height="80px" alt="corazón"/>
-                    <p>médica</p>
+                    <p>Médica</p>
                 </div>
                 <div class="mistrabajos">
-                    <p class="boton">Libro</p>
-                    <img src="img/cuchara cocina.gif" width="80px" height="80px" alt="Cuchara de cocina"/>
-                    <p>de cocina</p>
+                    <a href="Proyectos.html"><p class="boton">Libro</p></a>
+                    <img src="img/mujeres.gif" width="80px" height="80px" alt="Cuchara de cocina"/>
+                    <p>de Tipógrafas</p>
                 </div>
                 <div class="mistrabajos">
-                    <p class="boton">Fascículo</p>
+                    <a href="Proyectos.html"><p class="boton">Fascículo</p></a>
                     <img src="img/alien.gif" width="80px" height="80px" alt="Alien"/>
-                    <p>de alienígenas</p>
+                    <p>Alienígena</p>
                 </div>
+            </section>
 <!--habilidades-->
-            </section>            
-                    <div>
-                        <p class="subtitulo">Habilidades</p>
-                        <ol class="habilidades">
-                            <li>Responsable</li>
-                            <li>Resolutiva</li>
-                            <li>Trabajo en equipo</li>
-                            <li>Proactiva</li>
-                            <li>Puntualidad</li>
-                        </ol>
-                    </div>
-                </article>
+            <section class="slider-tags"> 
+                <div class="slider-linea">
+                    <h4 class="tag">Diseño Editorial</h4>
+                    <h4 class="tag">Desarrollo web</h4>
+                    <h4 class="tag">Figma</h4>
+                    <h4 class="tag">GitHub</h4>
+                    <h4 class="tag">Identidad Visual</h4>
+                    <h4 class="tag">Comunicación Visual</h4>
+                    <h4 class="tag">Diseño Editorial</h4>
+                    <h4 class="tag">Desarrollo web</h4>
+                    <h4 class="tag">Figma</h4>
+                    <h4 class="tag">GitHub</h4>
+                    <h4 class="tag">Identidad Visual</h4>
+                    <h4 class="tag">Comunicación Visual</h4>
+                </div>
             </section>
 
 <!-- información mia-->
-            <section> 
+            <section id="infomia"> 
                 <article>
-                        <h3 id="seccion-sobremi">Sobre mí</h3>
+                        <h2>Soy Daniela Gomez</h2>
                         <div id="fotoinfo">
                             <img class="imagen" src="img/mifotog.jpg" width="440px" height="440" alt="Daniela"/>
                             <p class="descripcionmia">Soy estudiante de Diseño y Comunicación Visual en la Universidad Nacional de Lanús. Estoy en busca de una oportunidad laboral en la que pueda poner en práctica mis conocimientos. Soy comprometida, empática, puntual y muy dispuesta en aprender cosas.</p>
-                        </div>
                 </article>
             </section>
 
@@ -120,39 +111,48 @@
                         <p class="bajada">Instituto Manuel Belgrano</p>
                 </div>
             </section>
-<!--hobbies-->
-                    <aside>
-                        <h5>Hobbies</h5>
-                            <p id="aficción">A lo largo de mi vida, he desarrollado varias aficiones que no solo disfruto, sino que también complementan mi desarrollo personal y profesional.</p>
-                            <article id="actividades">
-                                <div>
-                                    <img class="imagen" src="img/Nado.jpg" width="200px" height="220" alt="Nado"/>
-                                    <p>Practico natación regularmente, lo que me ayuda a mantenerme en forma y desarrollar disciplina.</p>
-                                </div>
-                                <div>
-                                    <img class="imagen" src="img/rompecabezas.jpg" width="200px" height="220" alt="Rompecabezas"/>
-                                    <p>Disfruto de juegos de mesa como rompecabezas, que fortalecen mis habilidades de pensamiento lógico y resolución de problemas.</p>
-                                </div>
-                                <div>
-                                    <img class="imagen" src="img/viaje.jpg" width="200px" height="220" alt="Viaje"/>
-                                    <p>Me encanta viajar, lo que me permite tener una perspectiva más amplia en cuanto a lugares nuevos.</p>
-                                </div>
-                        </article>
-                    </aside>
-                </article>
-            </section>
+
         </main>
         
         <footer>
-            <h3 id="seccion-contacto">Contacto</h3>
-            <div>
-                <ul>
-                    <li>DG.daniela.500.@gmail.com</li>
-                    <li>11546381638</li>
-                    <li><a href="https://www.behance.net/danielagomez84">Porfolio</a></li>
-                </ul>
-            </div>
-            <a href="#milogo"><img class="imagen" src="img/LogoB.png" width="90" height="50" alt="logomio"/></a>
+            <ol>
+                <li>Todos los derechos reservados.</li>
+                <li id="bold">Copyright © 2024 Daniela Gomez.</li>
+            </ol>
+                <div class="footer-icons">
+                    <a href="mailto:dg.daniela.500@gmail.com" class="icon">
+                    <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_dani._.77/" target="_blank" class="icon">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="icon">
+                    <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.behance.net/danielagomez84" target="_blank" class="icon">
+                    <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            <img class="imagen" src="img/logo-b.svg" width="90" height="50" alt="logomio"/>
         </footer>
+<script>
+	var icon = document.getElementById("icon");
+    var logo = document.getElementById("logo")
+
+	icon.onclick = function(){
+		document.body.classList.toggle("light-theme");
+		if(document.body.classList.contains("light-theme")){
+			icon.src = "img/Luna.svg";
+            logo.src = "img/logo-n.svg";
+		}else{
+			icon.src="img/Sol.svg";
+            logo.src = "img/logo-b.svg";
+		}
+}
+
+</script>
+
+
+
     </body>
 </html> 

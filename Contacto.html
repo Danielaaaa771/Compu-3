@@ -12,10 +12,10 @@
     </head>
 
     <body>
-        <header id=cabecera>
+        <header id="headercontacto">
             <nav>
                 <a href="index.html"><img src="img/logo-b.svg" width="90px" height="50px" alt="logomio" id="logo"/></a>
-                <div id="botonesa"><a href="#seccion-trabajos">
+                <div id="botonesa">
                     <a href="Proyectos.html"><span>Proyectos</span></a>
                     <a href="Arte.html"><span>Arte</span></a>
                     <span>Contacto</span>
@@ -25,7 +25,7 @@
             <img src="img/contactoyo.jpg">
         </header>
         <main>
-            <section>
+            <section id="h2form">
                 <h2>¿Querés crear algo genial juntos?</h2>
             </section>
             <section id="formulario">
@@ -34,14 +34,14 @@
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom01">Nombre</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Cosme" value="Mark" required>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Cosme" value="" required>
                                 <div class="valid-feedback">
                                 Yeei!
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <label for="validationCustom02">Apellido</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Fulanito" value="Otto" required>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Fulanito" value="" required>
                                 <div class="valid-feedback">
                                 Yeei!
                                 </div>
@@ -65,12 +65,9 @@
                                 </div>
                             </div>
                     </div>
-                        <div class="Escribime">
-                            <label for="validationCustom05">Escribime</label>
-                            <input type="text" class="form-control" id="validationCustom05" placeholder="Hola Dani, quiero crear algo con vos!!!" required>
-                            <div class="invalid-feedback">
-                            holaa.
-                            </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Escribime</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Holaaa Dani, quiero hacer algo con vosss!!!</textarea>
                         </div>
                     <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>

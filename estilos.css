@@ -64,9 +64,6 @@ header{
     --violeta:#BF58E1;
     --verde:#53C888;
 }
-#logo{
-    transition: all 0.3s ease;
-}
 body{
     background-color: var(--primary-color);
 }
@@ -174,15 +171,7 @@ p{
     filter: saturate(180%);
     transform: scale(1.1);
 }
-.imagenes{
-    display: flex;
-    justify-content: space-around;
-}
 /*-------------------------------------------------*/
-.secciones{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 /*botones de trabajos*/
 #trabajos{
     margin: 30% 10% 10% 10%;
@@ -455,28 +444,23 @@ p{
     font-weight: 700;
     margin-top: 3%;
     margin-bottom: 0;
-
 }
-#obras {
-    display: flex; 
-    flex-wrap: wrap; 
-    margin: 0 auto; 
+.dosobras{
+    display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
-#obras div {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    text-align: center; 
-    margin: 10px; 
-    margin-bottom: 30px;
-    max-width: calc(50% - 20px); 
+.obra2{
+    margin-top: 100px;
 }
-.descripcion {
-    display: flex; 
-    align-items: center; 
-    gap: 5px; 
+#sep{
+    margin-left: 10px;
 }
+#sep2{
+    margin-bottom: 5%;
+}
+
+
 /*---------------------------------------------------------------------arte*/
 /*---------------------------------------------------------------------contacto*/
 .form-row{
@@ -526,7 +510,9 @@ button[type="submit"]:hover {
     display: flex;
 
 }
-
+.dropdown{
+    display: none;
+}
 @media only screen and (max-width: 1920px) {
     #trabajos{
         margin: 40% 10% 10% 10%;
@@ -538,4 +524,189 @@ button[type="submit"]:hover {
         margin-top: 5%;
     }
 
+}
+@media (max-width: 600px) {
+    h2 {
+        font-size: 4.5vw;
+        margin-top: 5px;
+    }
+    #h2form{
+        font-size: 4.5vw;
+    }
+
+    header {
+        height: auto;
+    }
+    #logo {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #botonesa {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 4vw;
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        margin-right: 0;
+    }
+    #icon {
+        width: 24px;
+    }
+    #frase {
+        font-size: 4vw;
+        max-width: 90%;
+        left: 5%;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        max-width: 50%;
+        left: 5px;
+    }
+    /*nav{
+        display: none;
+    }*/
+    .dropdown{
+        display: show;
+    }
+    #trabajos {
+        margin: 10%;
+    }
+    .mistrabajos {
+        font-size: 4vw;         
+        padding-bottom: 1em;
+        gap: 10px;             
+        border-bottom: 1px solid rgb(124, 124, 124);
+        margin-bottom: 1.5em;
+        display: flex;
+        align-items: center;
+    }
+    .mistrabajos img {
+        width: 50px;  
+        height: auto;
+    }
+    .mistrabajos p {
+        text-align: center;
+    }
+    .tag {
+        font-size: 2vw;       
+        padding: 10px 15px;      
+        margin-right: 8px;
+    }
+    .slider-linea {
+        height: auto;
+        gap: 8px;
+    }
+    #infomia {
+        margin: 0 5%;
+    }
+    #fotoinfo {
+        flex-direction: column;
+    }
+    .imagen {
+        width: 80%; 
+        height: auto;
+        margin-bottom: 20px; 
+    }
+    .descripcionmia {
+        font-size: 4vw; 
+        margin-left: 0; 
+        width: 90%; 
+    }
+    #info {
+        flex-direction: column;
+        margin: 0 5%; 
+    }
+    h4 {
+        font-size: 3vw; 
+    }
+    .usoherramienta1{
+        border-radius: 20px 20px 0px 0px; 
+        padding: 4vw; /* Ajustamos el padding */
+    }
+    .usoherramienta2 {
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .usoherramienta2 p{
+        font-size: 2.9vw;
+    }
+    .usoherramienta3{
+        border-radius: 0 0 20px 20px;
+    }
+    .usoherramienta3 p{
+        font-size: 2.9vw;
+    }
+    #imageneslogo {
+        justify-content: center; 
+        gap: 20px; 
+    }
+    #imageneslogo img{
+        width: 60px; 
+        height: 60px;
+    }
+    #info{
+        margin-bottom: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .imagenfu{
+        width: 80px;
+        height: 80px;
+    }
+    ol li{
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        font-size: 5vw;
+    }
+    #vistaproyectos img{
+        content: url(img/vistapreviaproyectos600.png);
+        width: 100%;
+        height: auto;
+    }
+    .trabajos-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoproyectos p{
+        font-size: 2.5vw;
+        width: 350px;
+    }
+    h3{
+        font-size:4vw;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    #cabecera{
+        height: 100px;
+    }
+    .dosobras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .imagenobra{
+        display: flex;
+        flex-direction:column ;
+        justify-items: center;
+    }
+    p{
+        font-size: 2.5vw;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

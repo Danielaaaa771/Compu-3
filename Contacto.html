@@ -19,7 +19,7 @@
                     <a href="Proyectos.html"><span>Proyectos</span></a>
                     <a href="Arte.html""><span>Arte</span></a>
                     <a href="Contacto.html"><span>Contacto</span></a>
-                    <img src="img/Sol.svg" id="icon">
+                    <img src="img/Sol.svg" class="icon"/>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-button">Menú</button>
@@ -27,7 +27,7 @@
                         <a href="Proyectos.html">Proyectos</a>
                         <a href="Arte.html">Arte</a>
                         <a href="Contacto.html">Contacto</a>
-                        <img src="img/Sol.svg" id="icon"/>
+                        <img src="img/Sol.svg" class="icon"/>
                     </div>
                 </div>
             </nav>
@@ -104,24 +104,22 @@
                 </div>
             <img class="imagenfu" src="img/logo-b.svg" width="90" height="50" alt="logomio"/>
         </footer>
-<script>
-	var icon = document.getElementById("icon");
-    var logo = document.getElementById("logo")
-
-	icon.onclick = function(){
-		document.body.classList.toggle("light-theme");
-		if(document.body.classList.contains("light-theme")){
-			icon.src = "img/Luna.svg";
-            logo.src = "img/logo-n.svg";
-		}else{
-			icon.src="img/Sol.svg";
-            logo.src = "img/logo-b.svg";
-		}
-}
-
-</script>
-
-
-
+        <script>
+            var icons = document.querySelectorAll(".icon");
+            var logo = document.getElementById("logo");
+            
+            icons.forEach(icon => {
+                icon.onclick = function() {
+                    document.body.classList.toggle("light-theme");
+                    if (document.body.classList.contains("light-theme")) {
+                        icons.forEach(icon => icon.src = "img/Luna.svg");
+                        logo.src = "img/logo-n.svg";
+                    } else {
+                        icons.forEach(icon => icon.src = "img/Sol.svg");
+                        logo.src = "img/logo-b.svg";
+                    }
+                }
+            });
+            </script>
     </body>
 </html> 

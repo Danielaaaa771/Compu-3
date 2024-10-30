@@ -42,6 +42,9 @@
 header{
     height: 400px;
     width: 100%;  
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 :root{
     --primary-color: black;
@@ -61,16 +64,9 @@ header{
     --violeta:#BF58E1;
     --verde:#53C888;
 }
-#logo{
-    transition: all 0.3s ease;
-}
 body{
     background-color: var(--primary-color);
-    background-image: url(img/patron.png);
-    background-repeat: repeat;
-
 }
-
 main{
     display: flex;
     flex-direction: column;
@@ -79,48 +75,49 @@ main{
     color: white;
     text-wrap: pretty;
     background-color: var(--primary-color);
-
+}
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+}
+video{
+    width: 100%;
+    height: auto;
+    /*    height: 1000px;*/
+    background-color: rgb(65, 18, 109);
+    border-radius: 0px 0px 20px 20px;
+    display: block;
+    z-index: 1; 
+    object-fit: cover;
+}
+#botonesa{
+    display: flex;
+    height: 40px;
+    border-radius: 50px;
+    padding:30px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 20px -5px #00000026;
+    background-color: rgba(185, 113, 255, 0.40);
+    font-size: 1.4vw;
+    font-family: "Reddit Sans", sans-serif ;
+    color: var(--secondary-color);
+    gap: 50px;
+    margin-right: 5%;
 }
 a{
     text-decoration: none;
-}
-
-video{
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(65, 18, 109);
-    border-radius: 0px 0px 20px 20px;
-}
-header{
-    display: flex;
-    flex-direction: column;
-}
-
-#botonesa{
-    height: 40px;
-    border-radius: 50px;
-    padding: 10px 30px;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0px 3px 20px -5px #00000026;
-    background-color: rgba(185, 113, 255, 0.40);
-    font-size: 20px;
-    font-family: "Reddit Sans", sans-serif ;
-    color: white;
-    gap: 50px;
-
+    color: inherit;
 }
 nav{
     display: flex;
-    margin: 30px 0px 0px 30px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    position: fixed;
+    margin: 30px 0px 0px 30px;
+    width: 100%;
     color: var(--secondary-color);
     z-index: 1000;
 }
@@ -131,35 +128,41 @@ nav{
 #frase{
     color: var(--secondary-color);
     font-family: "Alga-Semibold";
-    position: relative;
-    font-size: 50px;
+    font-size: 2.1vw;
     max-width: 50%;
     background-color: var(--primary-color);
     padding: 30px 20px;
     border-radius: 0px 0px 20px 20px;
     position: absolute;
-    justify-content: end;
-
+    bottom: -50px;
+    left: 10px;
+    transform: translateX(-2%);
+    z-index: 2;
+    margin-bottom: 50px;
+    text-wrap: pretty;
 }
 h2{
     text-align: center;
     color: rgb(87, 20, 150);
     font-family: "Alga-Regular";
     margin: 0px 0px 50px 0px;
-    font-size: 30px;
+    font-size: 2.1vw;
 }
 h3{
     font-family: "Alga-Bold"; 
-    font-size: 30px;
+    font-size: 2.1vw;
     letter-spacing: 2px;
     margin-top: 100px;
     margin-bottom: 30px;
 }
 h4{
     font-family: "Reddit Sans";
-    font-size: 20px;
+    font-size: 1.4vw;
     font-weight: 800;
     margin: 20px 0px 20px 0px;
+}
+p{
+    font-family: "Reddit Sans";
 }
 
 /*trabajos*/
@@ -167,15 +170,7 @@ h4{
     filter: saturate(180%);
     transform: scale(1.1);
 }
-.imagenes{
-    display: flex;
-    justify-content: space-around;
-}
 /*-------------------------------------------------*/
-.secciones{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 /*botones de trabajos*/
 #trabajos{
     margin: 30% 10% 10% 10%;
@@ -185,7 +180,7 @@ h4{
     display: flex;
     justify-content:flex-start;
     align-items: start;
-    font-size: 40px;
+    font-size: 2.8vw;
     padding-bottom: 1em;
     gap: 20px;
     border-bottom: 2px solid rgb(124, 124, 124);
@@ -194,7 +189,6 @@ h4{
     margin-bottom: 2em;
 }
 .mistrabajos p{
-    font-family: "Reddit Sans";
     color: var(--secondary-color);
 }
 .boton{
@@ -216,7 +210,7 @@ h4{
 }
 .tag{
     padding: 13px 27px 11px;
-    font-size: 20px;
+    font-size: 1.4vw;
     font-weight: 500;
     background-color:rgba(185, 113, 255, 0.40) ;
     height: fit-content;
@@ -255,11 +249,12 @@ h4{
 }
 .descripcionmia{
     font-family: "Reddit Sans";
-    font-size: 22px;
+    font-size: 1.5vw;
     line-height: 1.5;
     font-style: italic;
     margin-left: 30px;
     color: var(--secondary-color);
+    width: 50%;
 }
 /*---------------------------------------------------*/
 
@@ -267,6 +262,8 @@ h4{
 #info{
     margin: 0% 10% 5% 10%;
     display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .usoherramienta1{    
@@ -277,27 +274,34 @@ h4{
 #imageneslogo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 40px 20px;
+    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .usoherramienta2{
     background-color: rgb(61, 17, 133);
     padding: 3cqi;
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 .usoherramienta2 p{
-    font-size: 20px;
-
+    font-size: 1.4vw;
+    color: white;
+}
+.usoherramienta2 div{
+    display: flex;
+    align-items: center;
 }
 .usoherramienta3{
     background-color: rgb(60, 10, 109);
     padding: 3cqi;
     border-radius: 0px 20px 20px 0px;
 }
+.usoherramienta3 p{
+    color: white;
+}
 
 .titulo{
-    font-size: 18px;
+    font-size: 1.25vw;
     font-family: "Reddit Sans";
     font-weight: 800; 
     margin-top: 20px;
@@ -305,7 +309,7 @@ h4{
 
 .bajada{
     font-family: "Reddit Sans";
-    font-size: 18px;
+    font-size: 1.25vw;
 
 }
 
@@ -323,7 +327,7 @@ footer{
 }
 footer li{
     font-family: "Reddit Sans";
-    font-size: 15px;
+    font-size: 1vw;
     display: flex;
     flex-direction: column;
 }
@@ -340,7 +344,7 @@ footer li{
 
 .icon {
     color: #fff;
-    font-size: 2rem; 
+    font-size: 2.8vw; 
     transition: color 0.3s ease;
 }
 
@@ -351,11 +355,30 @@ footer li{
 /*---------------------------------------------------------------------proyectos*/
 #primeravista{
     max-width: 100%;
-
 }
 .trabajos-1{
     display: flex;
-
+}
+#vistaproyectos{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#vistaproyectos img{
+    width: 100%;
+    height: auto;
+}
+#vistaproyectos h2 {
+    color: black;
+    font-family: Alga-Bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(185, 113, 255, 0.40);
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 #azul{
     margin-top: 20%;
@@ -376,6 +399,9 @@ p{
     gap: 10px;
     max-width: 30%;
     align-content: center;
+}
+.infoproyectos p{
+    font-size:1.1vw ;
 }
 #rojo{
     background-color: var(--rojo);
@@ -409,38 +435,287 @@ p{
 }
 /*---------------------------------------------------------------------proyectos*/
 /*---------------------------------------------------------------------arte*/
+#cabecera{
+    height: 200px;
+}
+.imagenobra{
+    width: 95%;
+    height: auto;
+}
 #tituloobra{
     color: var(--secondary-color);
     font-weight: 700;
+    margin-top: 3%;
+    margin-bottom: 0;
 }
-#obras div{
-    display: inline-grid;
-    grid-template-rows:auto;
-    justify-items: center;
-    gap: 20px;
-    margin: 10px;
+.dosobras{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
-.descripcion{
-    gap: 55px;
+.obra2{
+    margin-top: 100px;
 }
+#sep{
+    margin-left: 10px;
+}
+#sep2{
+    margin-bottom: 5%;
+}
+
+
 /*---------------------------------------------------------------------arte*/
 /*---------------------------------------------------------------------contacto*/
 .form-row{
-    display:flex;
+    display: flex;
     gap: 30px;
 }
 .validationCustom02{
     background-color: rgb(45, 3, 85);
 }
-.Escribime{
-    width: 53rem;
-
+.Escribime {
+    width: 100%; 
+    margin-bottom: 21px; 
 }
 .form-control{
     background-color: rgb(45, 3, 85);
     color: white;
 }
-#formulario{
-    margin: 0% 5% 5% 5%;
-    gap: 30px;
+#formulario {
+    width: 75%; 
+    margin: 0 auto 5% auto; 
+}
+#headercontacto{
+    height: 0%;
+}
+#validationCustom05 { 
+    height: 400px; 
+    resize: none;
+}
+label{
+    color: var(--secondary-color);
+}
+button[type="submit"] {
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: var(--violeta); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(65, 18, 109); 
+}
+#escribime{
+    display: flex;
+
+}
+.dropdown{
+    display: none;
+}
+@media only screen and (max-width: 1920px) {
+    #trabajos{
+        margin: 35% 10% 10% 10%;
+        }
+    #azul{
+        margin-top: 30%;
+    }
+    #h2form{
+        margin-top: 5%;
+    }
+    #imageneslogo{
+        gap: 40px;
+    }
+
+}
+@media (max-width: 720px) {
+    h2 {
+        font-size: 4.5vw;
+        margin-top: 5px;
+    }
+    #h2form{
+        font-size: 4.5vw;
+    }
+
+    header {
+        height: auto;
+    }
+    #logo {
+        width: 70px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #botonesa {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 4vw;
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        margin-right: 0;
+    }
+    #icon {
+        width: 24px;
+    }
+    #frase {
+        font-size: 4vw;
+        max-width: 90%;
+        left: 5%;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        max-width: 50%;
+        left: 5px;
+    }
+    /*nav{
+        display: none;
+    }*/
+    .dropdown{
+        display: show;
+    }
+    #trabajos {
+        margin: 10%;
+    }
+    .mistrabajos {    
+        padding-bottom: 1em;
+        gap: 10px;             
+        border-bottom: 1px solid rgb(124, 124, 124);
+        margin-bottom: 1.5em;
+        display: flex;
+        align-items: center;
+    }
+    .mistrabajos img {
+        width: 50px;  
+        height: auto;
+    }
+    .tag {
+        font-size: 2vw;       
+        padding: 10px 15px;      
+        margin-right: 8px;
+    }
+    .slider-linea {
+        height: auto;
+        gap: 8px;
+    }
+    #infomia {
+        margin: 0 5%;
+    }
+    #fotoinfo {
+        flex-direction: column;
+    }
+    .imagen {
+        width: 80%; 
+        height: auto;
+        margin-bottom: 20px; 
+    }
+    .descripcionmia {
+        font-size: 4vw; 
+        margin-left: 0; 
+        width: 90%; 
+    }
+    #info {
+        flex-direction: column;
+        margin: 0 5%; 
+    }
+    h4 {
+        font-size: 3vw; 
+    }
+    .usoherramienta1{
+        border-radius: 20px 20px 0px 0px; 
+        padding: 4vw; /* Ajustamos el padding */
+    }
+    .usoherramienta2 {
+    border-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .usoherramienta2 p{
+        font-size: 2.9vw;
+    }
+    .usoherramienta3{
+        border-radius: 0 0 20px 20px;
+    }
+    .usoherramienta3 p{
+        font-size: 2.9vw;
+    }
+    #imageneslogo {
+        justify-content: center; 
+        gap: 20px; 
+    }
+    #imageneslogo img{
+        width: 60px; 
+        height: 60px;
+    }
+    #info{
+        margin-bottom: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .imagenfu{
+        width: 80px;
+        height: 80px;
+    }
+    ol li{
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        font-size: 5vw;
+    }
+    #vistaproyectos img{
+        content: url(img/vistapreviaproyectos600.png);
+        width: 100%;
+        height: auto;
+    }
+    .trabajos-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoproyectos p{
+        font-size: 2.5vw;
+        width: 500px;
+    }
+    h3{
+        font-size:4vw;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    #cabecera{
+        height: 100px;
+    }
+    .dosobras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagenobra{
+        display: flex;
+        flex-direction:column ;
+        justify-items: center;
+        width: 80%;
+    }
+    .descri p{
+        font-size: 2.5vw;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    form{
+        margin-bottom: 20px;
+    }
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
 }

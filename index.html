@@ -3,28 +3,32 @@
     <head>
         <meta charset="utf-8"/>
         <title>Daniela_Gomez_CV</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="logo" href="img/favicon-01.png" alt="favicon.ico">
         <link href="estilos.css"= rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <header id=cabecera>
+        <header>
             <nav>
-                <img src="img/logo-b.svg" width="90px" height="50px" alt="logomio" id="logo"/>
-                <div id="botonesa"><a href="#seccion-trabajos">
+                <a href="index.html"><img src="img/logo-b.svg" width="90px" height="50px" alt="logomio" id="logo"/></a>
+                <div id="botonesa">
                     <a href="Proyectos.html"><span>Proyectos</span></a>
                     <a href="Arte.html""><span>Arte</span></a>
                     <a href="Contacto.html"><span>Contacto</span></a>
                     <img src="img/Sol.svg" id="icon">
                 </div>
             </nav>
-            <video src="img/videobienvenida.mp4" muted autoplay loop></video>
-                <div id="frase">
-                    <p >Diseñar es dar forma a ideas,</p>
-                    <p>transformándolas en realidades funcionales y estéticas.</p>
-                </div>
+            <div id="container">
+                <video src="img/videobienvenida.mp4" muted autoplay loop></video>
+                    <div id="frase">
+                        <p >Diseñar es dar forma a ideas,</p>
+                        <p>transformándolas en realidades funcionales y estéticas.</p>
+                    </div>
+            </div>
         </header>
         <main>
 <!--botones de trabajos-->
@@ -98,10 +102,14 @@
                 </article>
                 <div class="usoherramienta2">
                     <h4>Idiomas</h4>
-                        <p class="titulo">Español:</p>
-                        <p class="bajada">Nativo</p>
-                        <p class="titulo">Ingles:</p> 
-                        <p class="bajada">Básico A2 Key</p>
+                        <div>
+                            <p class="titulo">Español:</p>
+                            <p class="bajada">Nativo</p>
+                        </div>
+                        <div>
+                            <p class="titulo">Ingles:</p> 
+                            <p class="bajada">Básico A2 Key</p>
+                        </div>
                 </div>
                 <div class="usoherramienta3" >
                     <h4>Estudios</h4>
@@ -133,7 +141,7 @@
                     <i class="fab fa-behance"></i>
                     </a>
                 </div>
-            <img class="imagen" src="img/logo-b.svg" width="90" height="50" alt="logomio"/>
+            <img class="imagenfu" src="img/logo-b.svg" width="90" height="50" alt="logomio"/>
         </footer>
 <script>
 	var icon = document.getElementById("icon");

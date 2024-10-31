@@ -114,7 +114,7 @@ video{
 .dropdown-button {
     background-color: rgba(185, 113, 255, 0.40);
     color: var(--secondary-color);
-    padding:20px 40px;
+    padding:10px 30px;
     font-size: 3vw;
     border-radius: 15px;
     cursor: pointer;
@@ -129,7 +129,7 @@ video{
     z-index: 1;
     gap: 20px;
     border-radius: 15px;
-    padding: 90px 40px 20px 40px;
+    padding: 90px 10px 20px 10px;
     justify-items: center;
 }
 .dropdown-content a {
@@ -362,15 +362,16 @@ footer li{
     display: flex;
     flex-direction: column;
 }
+i{
+    font-size: 2.5vw;
+}
 #bold{
     font-weight: 700;
 }
 
 .footer-icons {
     display: flex;
-    justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
 .icon {
@@ -488,14 +489,9 @@ h3{
 .obra2{
     margin-top: 100px;
 }
-#sep{
-    margin-left: 10px;
+#obras{
+    margin-bottom: 100px;
 }
-#sep2{
-    margin-bottom: 5%;
-}
-
-
 /*---------------------------------------------------------------------arte*/
 /*---------------------------------------------------------------------contacto*/
 .form-row{
@@ -517,9 +513,6 @@ h3{
     width: 75%; 
     margin: 0 auto 5% auto; 
 }
-#headercontacto{
-    height: 0%;
-}
 #validationCustom05 { 
     height: 400px; 
     resize: none;
@@ -527,7 +520,7 @@ h3{
 label{
     color: var(--secondary-color);
 }
-button[type="submit"] {
+.btn {
     margin-top: 20px; 
     padding: 10px 20px; 
     background-color: var(--violeta); 
@@ -537,13 +530,17 @@ button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-button[type="submit"]:hover {
+.btn:hover {
     background-color: rgb(65, 18, 109); 
 }
 #escribime{
     display: flex;
 }
+.col-md-6, .col-md-3, .col-md-4 {
+    width: 48%;
+}
+
+
 @media only screen and (max-width: 1920px) {
     #trabajos{
         margin: 40% 10% 10% 10%;
@@ -559,15 +556,18 @@ button[type="submit"]:hover {
     }
 
 }
-@media (max-width: 720px) {
+@media (max-width: 600px) {
     h2 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
         margin-top: 5px;
     }
     #h2form{
         font-size: 4.5vw;
     }
-
+    #logo{
+        width: 25%;
+        height: auto;
+    }
     header {
         height: auto;
     }
@@ -607,15 +607,12 @@ button[type="submit"]:hover {
         padding: 10px 15px;      
         margin-right: 8px;
     }
-    .slider-linea {
-        height: auto;
-        gap: 8px;
-    }
     #infomia {
         margin: 0 5%;
     }
     #fotoinfo {
         flex-direction: column;
+        margin-bottom: 30px;
     }
     .imagen {
         width: 80%; 
@@ -669,17 +666,21 @@ button[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 120px;
+        padding: 85px;
     }
     .imagenfu{
         width: 80px;
         height: 80px;
+        margin-top: 20px;
     }
     ol li{
         font-size: 2.8vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    footer ol{
+        padding-left: 0px;
     }
     .icon {
         font-size: 5vw;
@@ -695,7 +696,10 @@ button[type="submit"]:hover {
     }
     .infoproyectos p{
         font-size: 2.8vw;
-        width: 500px;
+        width: 300px;
+    }
+    i{
+        font-size: 5vw;
     }
     h3{
         font-size:4vw;
@@ -710,12 +714,13 @@ button[type="submit"]:hover {
         flex-direction: column;
         align-items: center;
         gap: 40px;
+        margin-left: 20px;
     }
     .imagenobra{
         display: flex;
         flex-direction:column ;
         justify-items: center;
-        width: 100%;
+        width: 95%;
         margin-top: 20px;
     }
     .obra2{
@@ -747,12 +752,12 @@ button[type="submit"]:hover {
     }
     .dropdown{
         display: flex;
-        margin-right: 120px;
-    }
-    nav{
-        width: 100%;
+        margin-right: 80px;
     }
     #botonesa{
         display: none;
+    }
+    .col-md-6, .col-md-3, .col-md-4 {
+        width: 100%;
     }
 }

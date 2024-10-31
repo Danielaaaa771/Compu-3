@@ -696,14 +696,14 @@ label{
     }
     .infoproyectos p{
         font-size: 2.8vw;
-        width: 300px;
+        /*width: 300px;*/
     }
     i{
         font-size: 5vw;
     }
     h3{
         font-size:4vw;
-        width: 350px;
+        /*width: 350px;*/
         margin-bottom: 10px;
     }
     #cabecera{

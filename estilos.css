@@ -54,6 +54,7 @@ header{
     --rosa:#852241;
     --violeta:#4E1761;
     --verde:#226540;
+    --hs: rgb(137, 51, 230);
 }
 .light-theme{
     --primary-color: rgb(240, 225, 255);
@@ -63,6 +64,7 @@ header{
     --rosa:#F16B95;
     --violeta:#BF58E1;
     --verde:#53C888;
+    --hs: rgb(56, 8, 107);
 }
 body{
     background-color: var(--primary-color);
@@ -181,9 +183,16 @@ nav{
     margin-bottom: 50px;
     text-wrap: pretty;
 }
+h1{
+    text-align: center;
+    color: var(--hs);
+    font-family: "Alga-Regular";
+    font-size: 3vw;
+    margin-bottom: 50px;
+}
 h2{
     text-align: center;
-    color: rgb(87, 20, 150);
+    color: var(--hs);
     font-family: "Alga-Regular";
     margin: 0px 0px 50px 0px;
     font-size: 2.1vw;
@@ -557,6 +566,10 @@ label{
 
 }
 @media (max-width: 600px) {
+    h1{
+        font-size: 6vw;
+        margin-bottom: 20px;
+    }
     h2 {
         font-size: 5.5vw;
         margin-top: 5px;
@@ -603,7 +616,7 @@ label{
         height: auto;
     }
     .tag {
-        font-size: 2vw;       
+        font-size: 2.5vw;       
         padding: 10px 15px;      
         margin-right: 8px;
     }
@@ -629,7 +642,7 @@ label{
         margin: 0 5%; 
     }
     h4 {
-        font-size: 3vw; 
+        font-size: 4vw; 
     }
     .usoherramienta1{
         border-radius: 20px 20px 0px 0px; 
@@ -642,13 +655,13 @@ label{
     justify-content: space-between;
     }
     .usoherramienta2 p{
-        font-size: 2.8vw;
+        font-size: 3.3vw;
     }
     .usoherramienta3{
         border-radius: 0 0 20px 20px;
     }
     .usoherramienta3 p{
-        font-size: 2.8vw;
+        font-size: 3.3vw;
     }
     #imageneslogo {
         justify-content: center; 
@@ -695,14 +708,14 @@ label{
         flex-direction: column;
     }
     .infoproyectos p{
-        font-size: 2.8vw;
+        font-size: 3.3vw;
         width: 260px;
     }
     i{
         font-size: 5vw;
     }
     h3{
-        font-size:4vw;
+        font-size:4.5vw;
         width: 260px;
         margin-bottom: 10px;
     }
@@ -734,13 +747,13 @@ label{
         justify-content: center;
     }
     .tituloobra{
-        font-size: 2.8vw;
+        font-size: 3.3vw;
     }
     p{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .baja{
-        font-size: 2.8vw;
+        font-size: 3.3vw;
     }
     form{
         margin-bottom: 20px;
